@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 
@@ -9,7 +9,7 @@ int Num(int num)
         return num;
     else
     {
-        for(int i = 0; i <= num; i ++)
+        for(int i = 100; i <= num; i ++)
         {
             int fir = i / 100;
             int sec = (i % 100) / 10;
@@ -19,10 +19,11 @@ int Num(int num)
                 result = result + 1;
         }
     }
-    return(99 + result);
+    return (99 + result);
 }
 int main()
 {
     int num;
     cin >> num;
+    cout << Num(num);
 }
